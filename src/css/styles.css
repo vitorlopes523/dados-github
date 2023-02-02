@@ -1,0 +1,188 @@
+body {
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+.header {
+  height: 12.5rem;
+  background: url(../assets/Fundo.png) no-repeat;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  width: 6.25rem;
+  border-radius: 50%;
+  margin-left: 6.25rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.75rem;
+
+  margin: 3.75rem 0;
+}
+
+.container .data-entry {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  width: 80%;
+}
+
+.data-entry input[type=text] {
+  width: 60%;
+  height: 2.5rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  padding-left: 1rem;
+}
+
+.data-entry .btn-seek-information {
+  background: var(--primary-color);
+  opacity: 0.8;
+  color: var(--white-color);
+  width: 5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.data-entry .btn-seek-information:hover {
+  background-image: var(--linear-color);
+  opacity: 1;
+}
+
+.container .not-found {
+  color: var(--gray-color);
+}
+
+.container .user-information {
+  background-color: var(--bg-info-color);
+  width: 80%;
+  border-radius: 8px;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-information .profile-picture {
+  width: 12.5rem;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  margin-top: 1rem;
+}
+
+.user-information .login {
+  color: var(--gray-color);
+  font: 0.5rem;
+}
+
+.user-information .data {
+  margin-bottom: 1rem;
+}
+
+.user-information .data .name {
+  font-weight: 700;
+  color: var(--white-color);
+  margin-bottom: 1rem;
+}
+
+.user-information .data .bio {
+  font-weight: 400;
+  color: var(--gray-color);
+}
+
+.user-information .btn-show-repositories {
+  background: var(--primary-color);
+  opacity: 0.8;
+  color: var(--white-color);
+  margin-bottom: 0.5rem;
+  padding: 0.875rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+}
+
+.user-information .btn-show-repositories:hover {
+  background-image: var(--linear-color);
+  opacity: 1;
+}
+
+.information-repositories h2 {
+  color: var(--white-color);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.information-repositories .list-repositories {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0.625rem;
+}
+
+.list-repositories .repository {
+  margin-bottom: 1rem;
+}
+
+.list-repositories .repository a {
+  color: var(--white-color);
+  padding: 0.625rem;
+  border-radius: 8px;
+  background-color: var(--gray-secudary-color);
+  transition: 0.3s ease-in;
+}
+
+.list-repositories .repository a:hover {
+  opacity: 1;
+  background-color: var(--primary-color);
+}
+
+.hide {
+  display: none;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+
+.footer .social-networks {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer p {
+  color: var(--gray-color);
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.social-networks a i {  
+  font-size: 20px;
+  border: 1px solid transparent;
+  color: var(--white-color);
+  transition: 0.3s ease-in-out;
+}
+
+.social-networks a i:hover {
+  background-image: var(--linear-color);
+}

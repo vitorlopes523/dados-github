@@ -1,0 +1,30 @@
+@media (max-width: 600px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .header .logo {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .container .data-entry {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .data-entry input[type=text] {
+    width: 80%;
+  }
+
+  .data-entry .btn-seek-information {
+    height: 2.5rem;
+    width: 6rem;
+  }
+}
