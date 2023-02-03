@@ -72,8 +72,8 @@ async function getRepositories(userName) {
 
     repositoryData.forEach(repos => {
       repositoryItems += `<li class="repository">
-                                <a href="${repos.html_url}" target="_blank">${repos.name}</a>
-                              </li>`
+                            <a href="${repos.html_url}" target="_blank">${repos.name}</a>
+                          </li>`
     })
     
    document.querySelector('.user-information').innerHTML += `<div class="information-repositories">
@@ -81,9 +81,9 @@ async function getRepositories(userName) {
                                                               <ul class="list-repositories">${repositoryItems}</ul>
                                                             </div>
     `
-    const repositoryNotFound = `<h4 class="not-found">Não possui repositórios!</h4>`
-    if(repositoryItems === '') {
-      document.querySelector(".list-repositories").innerHTML = repositoryNotFound
-      return
-    }
+  const repositoryNotFound = `<h4 class="not-found">Não possui repositórios!</h4>`
+  if(repositoryItems === '') {
+    document.querySelector(".list-repositories").innerHTML = repositoryNotFound
+    return
+  }
 }
