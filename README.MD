@@ -24,6 +24,7 @@ Projeto pessoal desenvolvido com objetivo de consolidar conhecimentos em relaç�
 ### Link da API:
 
 -Dados do Usuário: [https://docs.github.com/pt/rest/reference/users]
+
 -Dados dos Repositórios: [https://docs.github.com/pt/rest/reference/repos]
 
 
